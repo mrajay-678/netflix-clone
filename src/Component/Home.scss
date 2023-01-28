@@ -1,0 +1,98 @@
+$bg: rgb(16, 16, 16);
+
+.banner {
+    height: 600px;
+    background-color: $bg;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 3rem;
+    box-sizing: border-box;
+
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        background: $bg;
+        opacity: 0.4;
+    }
+
+    h1,
+    p {
+        z-index: 10;
+        letter-spacing: 1.5px;
+        word-spacing: 2px;
+        color: white;
+    }
+
+    p {
+        font-family: emoji;
+    }
+
+    .play-btn ,.add-list-btn {
+        z-index: 1;
+        padding: 8px 20px;
+        background: white;
+        color: black;
+        min-width: 100px;
+        border-radius: 5px;
+        margin: 0 12px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        cursor: pointer;
+    }
+    .button-4 {
+        transition: all .3s;
+      }
+      .button-4:hover {
+        animation: pulse 1s infinite;
+        transition: .3s;
+      }
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        70% {
+          transform: scale(.9);
+        }
+          100% {
+          transform: scale(1);
+        }
+      }
+    .add-list-btn{
+        background: whitesmoke;
+    }
+}
+
+.row {
+    padding: 20px;
+    background-color: $bg;
+
+
+    div {
+        display: flex;
+        gap: 12px;
+        overflow-x: auto;
+        padding: 20px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}
+
+.video-list {
+    width: 200px;
+    cursor: pointer;
+    transition: width 0.8s, transform 0.5s;
+
+    &:hover {
+        // width: 210px;
+        transform: translateY(-20px);
+    }
+}
