@@ -5,16 +5,17 @@ import {ImSearch} from 'react-icons/im'
 const Header = () => {
     return (
         <>
-            <nav className='header'>
-                <img src={logo} alt="" srcSet="" />
+            <div className='header w-100'>
+                <div className='d-flex w-100 w-md-0 justify-content-between '><img src={logo} alt="" srcSet="" /> <div className='d-md-none'><ImSearch/></div> </div>
                 <div className='navigate-link'>
                     <Link to="" >Tv Show</Link>
                     <Link to="" >Movies</Link>
                     <Link to="" >Recently Added</Link>
                     <Link to="" >List</Link>
                 </div>
-                <ImSearch/>
-            </nav>
+                <div className=' d-none d-md-block'><ImSearch/></div>
+                
+            </div>
         </>
     )
 }

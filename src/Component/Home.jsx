@@ -8,7 +8,7 @@ const api_key = "4ae6678572a341ef32b35567c44a7c3f";
 const base_url = "https://api.themoviedb.org/3/";
 
 const Row = ({ title, arr = [] }) => (
-    <div className="row ">
+    <div className="row  m-0">
         <h2>{title}</h2>
         <div>
             {
