@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <>
             <div className='header w-100'>
-                <div className='d-flex w-100 w-md-0 justify-content-between '><img src={logo} alt="" srcSet="" /> <div className='d-md-none'><ImSearch/></div> </div>
+                <div className='d-flex mobile-menu justify-content-between '><img src={logo} alt="" srcSet="" /> <div className='d-md-none'><ImSearch/></div> </div>
                 <div className='navigate-link'>
                     <Link to="" >Tv Show</Link>
                     <Link to="" >Movies</Link>
