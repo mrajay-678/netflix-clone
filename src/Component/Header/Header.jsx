@@ -12,6 +12,7 @@ const Header = () => {
                     <Link to="" >Movies</Link>
                     <Link to="" >Recently Added</Link>
                     <Link to="" >List</Link>
+                    <Link to="/Counter" >Counter</Link>
                 </div>
                 <div className=' d-none d-md-block'><ImSearch/></div>
                 
